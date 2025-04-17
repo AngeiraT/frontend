@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -19,8 +19,65 @@
   }
 }
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+:root {
+  --superhero-red: #e50914;
+  --superhero-yellow: #ffcc00;
+  --superhero-blue: #0077ff;
+  --superhero-black: #0d0d0d;
+  --superhero-white: #ffffff;
+
+  /* Comic-style font */
+  --comic-font: 'Bangers', cursive;
+}
+
+/* Apply global styles */
+body {
+  background-color: var(--superhero-black);
+  color: var(--superhero-white);
+  font-family: var(--comic-font);
+}
+
+/* Example for buttons */
+.superhero-button {
+  background-color: var(--superhero-red);
+  color: var(--superhero-white);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.superhero-button:hover {
+  background-color: var(--superhero-yellow);
+  color: var(--superhero-black);
+  transform: scale(1.05);
+}
+
+/* Animated background */
+.superhero-bg {
+  /* background-image: url('/images/superhero-bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: moveBg 10s linear infinite; */
+  background-image: url('/images/superhero-bg1.jpg');
+  background-size: 200% auto;  /* Makes it stretch for larger screens */
+  background-position: 0% 50%;
+  animation: moveBg 10s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes moveBg {
+  0% { background-position: 0% 50%; }
+  /* 100% { background-position: 100% 50%;} */
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
