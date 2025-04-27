@@ -65,10 +65,10 @@ import { notFound } from "next/navigation";
 import router from "next/router";
 
 const menuItems = {
-  espresso: { name: "Espresso", image: "/images/espresso.jpg", price: "3.99", description: "Strong and rich espresso shot." },
-  latte: { name: "Latte", image: "/images/latte.jpg", price: "4.99", description: "Smooth espresso with steamed milk." },
-  "iced-latte": { name: "Iced Latte", image: "/images/iced-latte.jpg", price: "5.49", description: "Chilled espresso with milk." },
-  croissant: { name: "Croissant", image: "/images/croissant.jpg", price: "2.99", description: "Flaky, buttery pastry." },
+  espresso: { name: "Espresso", image: "/images/espresso.png", price: "3.99", description: "Strong and rich espresso shot." },
+  latte: { name: "Latte", image: "/images/latte.png", price: "4.99", description: "Smooth espresso with steamed milk." },
+  "iced-latte": { name: "Iced Latte", image: "/images/iced-latte.png", price: "5.49", description: "Chilled espresso with milk." },
+  croissant: { name: "Croissant", image: "/images/croissant.png", price: "2.99", description: "Flaky, buttery pastry." },
 };
 type ItemPageClientProps = {
   // params: { id: string };
